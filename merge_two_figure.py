@@ -13,7 +13,7 @@ fig.update_yaxes(title_text='Flow (l/h)')
 fig.show()
 
 #one more example with custom legend
-fig1 = px.line(y=g_loss_list).update_traces(showlegend=True, name='g_loss')
+fig1 = px.line(y=g_loss_list, template='seaborn').update_traces(showlegend=True, name='g_loss')
 fig2 = px.line(y=d_loss_list).update_traces(showlegend=True, name='d_loss')
 
 fig = go.Figure()
